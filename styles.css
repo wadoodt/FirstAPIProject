@@ -1,0 +1,97 @@
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: dodgerblue;
+    max-width: 205px;
+    background-position: top;
+    overflow: hidden;}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: lightpink ;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: blue;
+    font-size: 17px;}
+
+/* Change the color of links on hover */
+.topnav a:hover {color: blue ;}
+
+/* Add a color to the active/current link */
+.topnav a.active {color: blue;}
+.search-box{}
+
+body{background: cornflowerblue}
+
+.Contact{
+    background-image: url("images/395637.jpg");
+    background-attachment: fixed;
+    background-size: cover;}
+
+.ContactElement{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+    -ms-transform: translateY(-50%);
+    transform: translateY(50%);
+    width: 800px;
+    margin: 0 auto;}
+
+.contactKeyWords {
+    color: black;
+    font-size: 20px;
+}
+
+.ContSpec{
+    color: black;
+    font-size: 20px;
+}
+
+.ContactDiv{
+    position: relative;
+    display:flex;
+    gap:10px;
+    padding: 10px;}
+
+.Login{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    position: relative;
+    color: white;
+    font-size: 120%;
+}
+
+.fillout{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    position: relative;
+    color: black;
+    font-size: 120%;
+}
+
+.buttonSend{
+    color: black;}
+
+.weatherApp{
+    position: relative;
+    font-size: 135%;
+    top: 50%;
+    width: 500px;
+    margin: 0 auto;}
+
+#weatherPage{
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#weatherInfo a{
+    font-size: 30px;
+}
+
+.Contact p{
+
+}
+
