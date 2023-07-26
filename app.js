@@ -22,55 +22,12 @@ function displayWeather(data) {
     <h2>Weather in ${data.name}</h2>
     <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png">
     <p>Temperature: ${Math.round(data.main.temp - 273.15)} °C</p>
-    <p>Feels like: ${Math.round(data.main.feels_like- 273.15)} °C</p>
+    <p>Feels like: ${Math.round(data.main.feels_like - 273.15)} °C</p>
     <p>Weather: ${data.weather[0].description}</p>
     <p>Humidity: ${data.main.humidity}%</p>
     <p>Wind Speed: ${data.wind.speed} m/s</p>
-    <p>Last update at ${(new Date(data.dt * 1000)).getHours()}:${Math.round((new Date(data.dt * 1000)).getMinutes()/10)*10}</p>
+    <p>Last update at ${(new Date(data.dt * 1000)).getHours()}:${Math.floor((new Date(data.dt * 1000)).getMinutes() / 10) * 10}</p>
   `;
-    weatherInfo.style.color ="black";
-    document.getElementById("wA").style.color = "black";
-    if (data.weather[0].description === "snow"){
-        document.body.style.backgroundImage = "url('images/snow.jpg')";}
-
-    else if (data.weather[0].description === "broken clouds"){
-        document.body.style.backgroundImage = "url('images/borkenClouds.jpg')"}
-
-    else if (data.weather[0].description === "mist"){
-        document.body.style.backgroundImage = "url('images/mist.jpg')";}
-
-    else if (data.weather[0].description === "shower rain"){
-            document.body.style.backgroundImage = "url('images/shower rain.jpg')";}
-
-    else if (data.weather[0].description === "thunderstorm"){
-        document.body.style.backgroundImage = "url('images/storm.jpg')";
-        weatherInfo.style.color ="white";
-        document.getElementById("wA").style.color = "white";
-    }
-
-    else if (data.weather[0].description === "scattered clouds"){
-        document.body.style.backgroundImage = "url('images/scattered_clouds.jpg')";}
-
-    else if (data.weather[0].icon === "01d"){
-        document.body.style.backgroundImage = "url('images/clearSkyDay.jpg')";}
-
-    else if (data.weather[0].icon === "01n"){
-        document.body.style.backgroundImage = "url('images/clearSkyNight.jpg')";
-        weatherInfo.style.color ="white";
-        document.getElementById("wA").style.color = "white";
-    }
-
-    else if (data.weather[0].icon === "02d"){
-        document.body.style.backgroundImage = "url('images/fewcloudsDay.jpg')";}
-
-    else if (data.weather[0].icon === "02n"){
-        document.body.style.backgroundImage = "url('images/fewCloudsNight.jpeg')";
-        weatherInfo.style.color ="white";
-        document.getElementById("wA").style.color = "white";
-    }
-
-    else if (data.weather[0].icon === "10d" || data.weather[0].icon === "10n"){
-        document.body.style.backgroundImage = "url('images/heavy-rain.jpg')";}
 }
 
 // Function to handle the 'Get Weather' button click
